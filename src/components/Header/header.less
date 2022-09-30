@@ -1,0 +1,132 @@
+header {
+    height: 100vh;
+    padding-top: 4rem;
+    overflow: auto;
+}
+
+.header_container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+    
+    // h5 {
+    //    font-size: 0.83em;
+    // }
+    // h2 {
+    //     font-size: 1.5em;
+    // }
+    // h3 {
+    //     font-size: 1.17em;
+    // }
+    // h4 {
+    //     font-size: 1em; 
+    // } 
+}
+
+//=============CTA==============
+
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+//=============HEADER SOCIALS==========
+
+.header__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 5rem;
+    bottom: 7rem;
+}
+
+.header__socials::after {
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+//==================HEADER CONTENT============
+
+.header__content {
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.header__content p {
+    margin: 2rem 0 2.6rem;
+    color: var(--color-light);
+    font-size: 0.95rem;
+}
+
+// //======================ME================
+
+// .me {
+//     background: linear-gradient(var(--color-primary), transparent);
+//     width: 20rem;
+//     height: 20rem;
+//     position: absolute;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     margin-top: 4rem;
+//     border-radius: 10rem;
+//     overflow: hidden;
+//     padding: 2rem 1.5rem 1.5rem 1.5rem;
+// }
+
+//======================SCROLL DOWN================
+
+.scroll__down {
+    position: absolute;
+    right: 5rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+//=============================MEDIA QUERIES(MEDIUM DEVICES)============================
+
+@media screen and (max-width: 1024px) {
+    .header {
+        height: 68vh;
+    }
+
+    .header__socials {
+        left: 5rem;
+        bottom: 15rem;
+    }
+
+    .header__content {
+        width: 600px;
+    }
+}
+
+//=============================MEDIA QUERIES(SMALL DEVICES)============================
+
+@media screen and (max-width: 600px) {
+    .header {
+        height: 100vh;
+    }
+
+    .header__socials {
+        left: 2rem;
+        bottom: 5rem;
+    }
+
+    .header__content {
+        width: 250px;
+    }
+
+    .me {
+        width: 15rem;
+        height: 15rem;
+    }
+}

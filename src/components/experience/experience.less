@@ -1,0 +1,144 @@
+.experience__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:1.5rem;
+    margin-bottom: 1rem;
+}
+
+.experience__cards-details {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 1rem;
+}
+
+.experience__card {
+    background: var(--color-bg-variant);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.experience__card:not(.details):hover  {
+    border-color: var(--color-primary-variant);
+    cursor: pointer;
+}
+
+.selected-card {
+    border-color: var(--color-primary-variant);
+}
+
+.experience__icon {
+    color: var(--color-primary);
+    font-size: 1.4rem;
+}
+
+.close-icon {
+    float: right;
+    font-size: 1.5rem;
+    color: var(--color-primary);
+}
+
+.organization__icon {
+    color: var(--color-primary);
+    height: 2rem;
+    width: 2rem;
+    border-radius: 1rem;
+}
+
+.experience__card h5 {
+    font-size: 0.95rem;
+}
+
+.experience__card small {
+    font-size: 0.7rem;
+    color: var(--color-light);
+}
+
+.timeline__content {
+    .MuiTimelineItem-root {
+        padding-left: 1.5rem;
+    }
+    .timeline-date {
+        font-size: 0.8rem;
+        p {
+            margin: 0.5rem 0 0.5rem;
+            color: var(--color-primary);
+        }
+    }
+    .timeline-org-name {
+        color: var(--color-white);
+        font-size: 0.95rem;
+    }
+
+    .link-style {  
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    .link-style:hover {
+        transform: scale(1.05);
+    }
+
+    .css-ha3bif-MuiTimelineItem-root:before {
+        padding: 0;
+        flex: 0;
+    }
+}
+
+.roles__modal {
+    .modal-content {
+        border: 2px solid var(--color-primary);
+        .btn-close {
+            color: var(--color-primary);
+        }
+    }
+    .modal-body{
+        color: #000250;
+    }
+
+    .modal-header {
+        color: #000250;
+        border-bottom: 2px solid var(--color-primary);
+    }
+
+    .modal-footer {
+        padding-top: 4px;
+        padding-bottom: 4px;
+        border-top: 2px solid var(--color-primary);
+        .btn {
+            padding: 0.5rem 1.2rem;
+            border: 2px solid #000250;
+            color: #000250;
+            background: var(--color-primary);
+        }
+    }
+}
+
+//=============================MEDIA QUERIES(MEDIUM DEVICES)============================
+
+@media screen and (max-width: 1024px) {
+    .timeline__content .MuiTimelineItem-root {
+        padding-left: 0;
+        p {
+            margin: 0.5rem 0 ;
+        }
+    }
+    .timeline__content .timeline-date {  
+        color: var(--color-primary);
+    }
+}
+
+//=============================MEDIA QUERIES(SMALL DEVICES)============================
+
+// @media screen and (max-width: 600px) {
+//     .timeline__content .MuiTimelineItem-root {
+//         padding-left: 0;
+//         p {
+//             margin: 0.5rem 0 ;
+//         }
+//     }
+//     .timeline__content .timeline-date {
+//         color: var(--color-primary);
+//     }
+// }
