@@ -25,7 +25,7 @@ const Skills: React.FC<skillsProps> = () => {
                             <BiBadgeCheck className="skills__details-icon" />
                             <div>
                                 <h4>CSS</h4>
-                                <small className="text-light">Intermediate</small>
+                                <small className="text-light">Experienced</small>
                             </div>
                         </article>
                         <article className="skills__details">
@@ -45,8 +45,15 @@ const Skills: React.FC<skillsProps> = () => {
                         <article className="skills__details">
                             <BiBadgeCheck className="skills__details-icon" />
                             <div>
-                                <h4>Angular</h4>
-                                <small className="text-light">Basic</small>
+                                <h4>Redux</h4>
+                                <small className="text-light">Experienced</small>
+                            </div>
+                        </article>
+                        <article className="skills__details">
+                            <BiBadgeCheck className="skills__details-icon" />
+                            <div>
+                                <h4>Jest</h4>
+                                <small className="text-light">Experienced</small>
                             </div>
                         </article>
                     </div>
