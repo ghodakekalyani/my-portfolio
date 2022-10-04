@@ -13,7 +13,7 @@ import {
 import Typography from '@mui/material/Typography';
 import Wipro from '../../assets/Wipro.jpg';
 import HSBC from '../../assets/HSBC.jpg';
-import School from '../../assets/School.jpg';
+import school from '../../assets/school.jpg';
 import GPKP from '../../assets/GPKP.jpg';
 import COEP from '../../assets/COEP.jpg';
 import useTheme from '@mui/material/styles/useTheme';
@@ -89,7 +89,7 @@ const Education: React.FC<EducationProps> = ({ setSelectedCard }: EducationProps
                     <TimelineSeparator>
                         <TimelineConnector />
                         <TimelineDot style={{ backgroundColor: '#fff' }}>
-                            <img className="organization__icon" src={School} alt="High School" />
+                            <img className="organization__icon" src={school} alt="High School" />
                         </TimelineDot>
                         <TimelineConnector />
                     </TimelineSeparator>
