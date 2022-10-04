@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import './header.less';
-import CTA from './CTA';
 import HeaderSocials from './headerSocials';
-import ME from '../../assets/me.jpg';
 import Nav from '../Nav/nav';
 import { AboutMe } from '../about/aboutMe';
 import Contact from '../contact/contact';
@@ -27,16 +25,6 @@ const header: React.FC<headerProps> = () => {
                 <Nav activeTab={activeTab} setActiveTab={setActiveTab} />
                 <HeaderSocials />
                 <div className="header__content">
-                    {/* {activeTab === 'me' && (
-                        <>
-                        <div className="me" id="me">
-                            <img src={ME} alt="me" />
-                        </div>
-                        <p>
-                        Hello! I am a Full Stack Developer from India and currently living in USA, California. I am passionate about creating interactive web applications.
-                    </p>
-                    </>
-                    )} */}
                     {activeTab === 'about' && <AboutMe />}
                     {activeTab === 'experience' && <Experience />}
                     {activeTab === 'skills' && <Skills />}

@@ -1,26 +1,7 @@
 import React, { useState } from 'react';
 import { CgAwards } from 'react-icons/cg';
-import { VscFolderLibrary } from 'react-icons/vsc';
 import { GiGraduateCap } from 'react-icons/gi';
-import { IoClose } from 'react-icons/io5';
 import './experience.less';
-import {
-    Timeline,
-    TimelineItem,
-    TimelineSeparator,
-    TimelineConnector,
-    TimelineContent,
-    TimelineOppositeContent,
-    TimelineDot,
-} from '@mui/lab';
-import FastfoodIcon from '@mui/icons-material/Fastfood';
-import LaptopMacIcon from '@mui/icons-material/LaptopMac';
-import HotelIcon from '@mui/icons-material/Hotel';
-import RepeatIcon from '@mui/icons-material/Repeat';
-import Typography from '@mui/material/Typography';
-import { SiWipro } from 'react-icons/si';
-import Wipro from '../../assets/Wipro.jpg';
-import HSBC from '../../assets/HSBC.jpg';
 import Orgdetails from './orgdetails';
 import Education from './Education';
 

@@ -1,11 +1,9 @@
 import React from 'react';
 import './nav.less';
-import { AiOutlineHome, AiOutlineUser } from 'react-icons/ai';
-import { BiBook, BiMessageSquareDetail } from 'react-icons/bi';
+import { AiOutlineUser } from 'react-icons/ai';
+import { BiMessageSquareDetail } from 'react-icons/bi';
 import { RiUserStarFill } from 'react-icons/ri';
 import { ImBriefcase } from 'react-icons/im';
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
 
 interface navProps {
     activeTab: String;
@@ -15,7 +13,6 @@ interface navProps {
 const nav: React.FC<navProps> = ({ setActiveTab, activeTab }) => {
     return (
         <nav>
-            {/* <a className={activeTab === 'me' ? 'active' : ''} onClick={()=>setActiveTab('me')}><AiOutlineHome/></a> */}
             <a className={activeTab === 'about' ? 'active' : ''} title="About Me" onClick={() => setActiveTab('about')}>
                 <AiOutlineUser />
             </a>

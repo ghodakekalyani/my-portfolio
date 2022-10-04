@@ -12,15 +12,6 @@ function App() {
         <>
             <Header />
         </>
-        // <Router>
-        //  <ResponsiveAppBar/>
-        //   <Switch>
-        //     <Route exact path="/" component={Header} />
-        //     <Route path="/about" component={AboutMe} />
-        //     <Route path="/contact" component={Contact} />
-        //     <Route path="/faq" component={Experience} />
-        //   </Switch>
-        // </Router>
     );
 }
 
