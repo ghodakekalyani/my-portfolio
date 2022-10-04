@@ -10,7 +10,7 @@ import Experience from '../experience/experience';
 interface headerProps {}
 
 const header: React.FC<headerProps> = () => {
-    const [activeTab, setActiveTab] = useState<String>('contact');
+    const [activeTab, setActiveTab] = useState<String>('about');
     return (
         <header>
             <div className="container header_container">
