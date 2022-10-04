@@ -20,10 +20,8 @@ export const AboutMe = () => {
 
                 <div className="about__content">
                     <p>
-                        Hello! I am a Full Stack Developer from India and currently living in USA, California. I am
-                        passionate about creating interactive web applications. ywgjg wgyfjgj fewfwgj fuwejfweekfbwm
-                        weefywjehff wefywgejf wfghw wfywgefj weefuwegf. wefguwegf wfewegfwef wefwfygwej e ewye wee wyed
-                        wy u m,ui.
+                        Hello! I am a Full Stack Developer and currently living in USA, California. I am passionate
+                        about creating interactive web applications.
                     </p>
                 </div>
             </div>
