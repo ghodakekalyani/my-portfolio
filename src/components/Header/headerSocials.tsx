@@ -1,17 +1,19 @@
 import React from 'react';
-import {BsLinkedin} from 'react-icons/bs';
-import {FaGithub} from 'react-icons/fa';
+import { BsLinkedin } from 'react-icons/bs';
+import { FaGithub } from 'react-icons/fa';
 
-interface headerSocialsProps {
-    
-}
+interface headerSocialsProps {}
 
 const HeaderSocials: React.FC<headerSocialsProps> = () => {
     return (
-        <div className='header__socials'>
-            <a href="https://linkedin.com/in/kalyani-ghodake" target="_blank"><BsLinkedin/></a>
-            <a href="https://github.com" target="_blank"><FaGithub/></a>
-        </div>
+        <>
+            <a href="https://linkedin.com/in/kalyani-ghodake" className="header__socials" target="_blank">
+                <BsLinkedin />
+            </a>
+            <a href="https://github.com" className="header__socials" target="_blank">
+                <FaGithub />
+            </a>
+        </>
     );
 };
 

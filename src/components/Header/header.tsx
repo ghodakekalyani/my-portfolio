@@ -23,9 +23,10 @@ const header: React.FC<headerProps> = () => {
                         <a href="../../assets/kalyani_cv.pdf" download>
                             Download CV
                         </a>
+                        <HeaderSocials />
                     </h5>
                     <Nav activeTab={activeTab} setActiveTab={setActiveTab} />
-                    <HeaderSocials />
+                    {/* <HeaderSocials /> */}
                     <div className="header__content">
                         {activeTab === 'about' && <AboutMe />}
                         {activeTab === 'experience' && <Experience />}
