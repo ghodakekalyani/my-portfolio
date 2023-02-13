@@ -21,9 +21,9 @@ export const AboutMe = () => {
                 <div className="about__content">
                     <p>
                         Hello! I am a Full Stack Developer with 4 years of experience and currently living in USA,
-                        California. I am passionate about creating interactive web applications. I enjoy coding, testig
-                        and integrations. Able to effectively self manage individual projects as well as collaborate as
-                        a part of a productive team.
+                        Texas. I am passionate about creating interactive web applications. I enjoy coding, testing and
+                        integration. Able to effectively self manage individual projects as well as collaborate as a
+                        part of a productive team.
                     </p>
                 </div>
             </div>
