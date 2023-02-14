@@ -6,6 +6,7 @@ import { AboutMe } from '../about/aboutMe';
 import Contact from '../contact/contact';
 import Skills from '../skills/skills';
 import Experience from '../experience/experience';
+import pdf from '../../assets/Kalyani_Ghodake_cv.pdf';
 
 interface headerProps {}
 
@@ -19,7 +20,7 @@ const header: React.FC<headerProps> = () => {
                     <h1>Kalyani Ghodake</h1>
                     <h5 className="text-light">
                         Fullstack Developer{' '}
-                        <a href="../../assets/Kalyani_Ghodake_cv.pdf" download>
+                        <a href={pdf} download="kalyani_cv.pdf">
                             Download CV
                         </a>
                         <HeaderSocials />
