@@ -26,7 +26,6 @@ const header: React.FC<headerProps> = () => {
                         <HeaderSocials />
                     </h5>
                     <Nav activeTab={activeTab} setActiveTab={setActiveTab} />
-                    {/* <HeaderSocials /> */}
                     <div className="header__content">
                         {activeTab === 'about' && <AboutMe />}
                         {activeTab === 'experience' && <Experience />}
@@ -35,7 +34,6 @@ const header: React.FC<headerProps> = () => {
                     </div>
                 </div>
             </header>
-            {/* <Footer /> */}
         </>
     );
 };
