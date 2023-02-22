@@ -46,7 +46,7 @@ const Education: React.FC<EducationProps> = ({ setSelectedCard }: EducationProps
                         <TimelineConnector />
                     </TimelineSeparator>
                     <TimelineContent sx={{ py: '12px', px: 2 }}>
-                        <Typography className="timeline-org-name">BTech E&TC</Typography>
+                        <Typography className="timeline-org-name">BTech Electronics & Telecomm.</Typography>
                         {!matches && (
                             <Typography className="timeline-date"> 2017, College of Engineering Pune</Typography>
                         )}
@@ -73,7 +73,7 @@ const Education: React.FC<EducationProps> = ({ setSelectedCard }: EducationProps
                         <TimelineConnector />
                     </TimelineSeparator>
                     <TimelineContent sx={{ py: '12px', px: 2 }}>
-                        <Typography className="timeline-org-name">Diploma E&TC</Typography>
+                        <Typography className="timeline-org-name">Diploma Electronics & Telecomm.</Typography>
                         {!matches && (
                             <Typography className="timeline-date"> 2014, Government Polytechnic Kolhapur</Typography>
                         )}
