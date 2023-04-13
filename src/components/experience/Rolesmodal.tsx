@@ -9,6 +9,32 @@ interface RolesmodalProps {
 }
 
 const modalData = {
+    VUESOL: {
+        organisation: 'Vuesol Technologies',
+        title: 'Frontend Developer',
+        description: (
+            <ul>
+                <li>Developed responsive web application using ReactJS, Redux, Typescript, HTML5, and LESS.</li>
+                <li>
+                    Implemented data visualization features using 'react-highcharts' library to present data in a
+                    user-friendly and informative way
+                </li>
+                <li>Utilized the Redux library to manage application state and implement complex UI features</li>
+                <li>Wrote high-quality, reusable, and scalable code following best practices and coding standards</li>
+                <li>
+                    Participated in code reviews to ensure consistency, maintainability, and performance of the codebase
+                </li>
+                <li>
+                    Documented new features, functionality, and code changes to ensure knowledge sharing and
+                    maintainability
+                </li>
+                <li>
+                    Developed unit and functional test cases using Jest and Enzyme to ensure application quality and
+                    stability
+                </li>
+            </ul>
+        ),
+    },
     HSBC: {
         organisation: 'HSBC',
         title: 'Software Engineer',
