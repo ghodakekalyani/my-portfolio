@@ -7,7 +7,7 @@ import Contact from '../contact/contact';
 import Skills from '../skills/skills';
 import Experience from '../experience/experience';
 // import pdf from '../../assets/Kalyani_Ghodake_cv.pdf';
-import pdf from '../../assets/Kalyani_Ghodake_resume.pdf';
+import pdf from '../../assets/Kalyani_Ghodake_Resume.pdf';
 interface headerProps {}
 
 const header: React.FC<headerProps> = () => {
