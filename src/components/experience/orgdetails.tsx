@@ -13,6 +13,7 @@ import {
 import Typography from '@mui/material/Typography';
 import Wipro from '../../assets/Wipro.jpg';
 import HSBC from '../../assets/HSBC.jpg';
+import Vuesol from '../../assets/Vuesol.jpg';
 import useTheme from '@mui/material/styles/useTheme';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Rolesmodal from './Rolesmodal';
@@ -35,6 +36,36 @@ const Orgdetails: React.FC<orgdetailsProps> = ({ setSelectedCard }: orgdetailsPr
         <article className="experience__card details">
             <IoClose className="close-icon" onClick={() => setSelectedCard('')} />
             <Timeline position={matches ? 'alternate' : 'right'} className="timeline__content">
+                <TimelineItem>
+                    {matches && (
+                        <TimelineOppositeContent sx={{ m: 'auto 0' }} variant="body2" className="timeline-date">
+                            <p>02/2022 - Present</p>
+                            <p>Vuesol Technologies</p>
+                        </TimelineOppositeContent>
+                    )}
+                    <TimelineSeparator>
+                        <TimelineConnector />
+                        <TimelineDot style={{ backgroundColor: '#fff' }}>
+                            <img className="organization__icon" src={Vuesol} alt="me" />
+                        </TimelineDot>
+                        <TimelineConnector />
+                    </TimelineSeparator>
+                    <TimelineContent sx={{ py: '12px', px: 2 }}>
+                        <Typography
+                            className="timeline-org-name link-style"
+                            title="My Role & Responsibilities"
+                            onClick={() => toggle('VUESOL')}
+                        >
+                            Frontend Developer
+                        </Typography>
+                        {!matches && (
+                            <Typography className="timeline-date"> 02/2022 - Present, Vuesol Technologies</Typography>
+                        )}
+                        {modal && orgModal === 'VUESOL' && (
+                            <Rolesmodal isOpen={modal} toggle={toggle} organisation="VUESOL" />
+                        )}
+                    </TimelineContent>
+                </TimelineItem>
                 <TimelineItem>
                     {matches && (
                         <TimelineOppositeContent sx={{ m: 'auto 0' }} variant="body2" className="timeline-date">
