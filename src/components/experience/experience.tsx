@@ -24,7 +24,7 @@ const Experience: React.FC<experienceProps> = () => {
                     >
                         <CgAwards className="experience__icon" />
                         <h5>Experiance</h5>
-                        <small>5+ Years</small>
+                        <small>4+ Years</small>
                     </article>
                     <article
                         className={selectedCard === 'education' ? 'experience__card selected-card' : 'experience__card'}

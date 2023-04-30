@@ -39,36 +39,6 @@ const Orgdetails: React.FC<orgdetailsProps> = ({ setSelectedCard }: orgdetailsPr
                 <TimelineItem>
                     {matches && (
                         <TimelineOppositeContent sx={{ m: 'auto 0' }} variant="body2" className="timeline-date">
-                            <p>02/2022 - Present</p>
-                            <p>Vuesol Technologies</p>
-                        </TimelineOppositeContent>
-                    )}
-                    <TimelineSeparator>
-                        <TimelineConnector />
-                        <TimelineDot style={{ backgroundColor: '#fff' }}>
-                            <img className="organization__icon" src={Vuesol} alt="me" />
-                        </TimelineDot>
-                        <TimelineConnector />
-                    </TimelineSeparator>
-                    <TimelineContent sx={{ py: '12px', px: 2 }}>
-                        <Typography
-                            className="timeline-org-name link-style"
-                            title="My Role & Responsibilities"
-                            onClick={() => toggle('VUESOL')}
-                        >
-                            Frontend Developer
-                        </Typography>
-                        {!matches && (
-                            <Typography className="timeline-date"> 02/2022 - Present, Vuesol Technologies</Typography>
-                        )}
-                        {modal && orgModal === 'VUESOL' && (
-                            <Rolesmodal isOpen={modal} toggle={toggle} organisation="VUESOL" />
-                        )}
-                    </TimelineContent>
-                </TimelineItem>
-                <TimelineItem>
-                    {matches && (
-                        <TimelineOppositeContent sx={{ m: 'auto 0' }} variant="body2" className="timeline-date">
                             <p>01/2020 - 09/2021</p>
                             <p>HSBC</p>
                         </TimelineOppositeContent>
